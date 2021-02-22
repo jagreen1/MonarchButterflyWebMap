@@ -1,6 +1,5 @@
-# MonarchButterflyWebMap
-Monarch Butterfly Adult Sighting Map for the Fall 2018 Southern Migration <br>
-[Map Link](https://jagreen1.github.io/MonarchButterflyWebMap/JAG_Geob472_Lab1_v4.html)
+# Monarch Butterfly WebMap
+[Monarch Butterfly Adult Sighting WebMap for the Fall 2018 Southern Migration](https://jagreen1.github.io/MonarchButterflyWebMap/JAG_Geob472_Lab1_v4.html) <br>
 
 This webmap displays location data for reported first sightings of adult Monarch Butterflies in 2018. The slider in the upper left can be used to filter data between August 1, 2018 and December 31, 2018. Data points can be clicked on to reveal metadata about the sighting events.
 
@@ -31,6 +30,3 @@ Taking this map forward, I would implement additional technical features such as
 
 Paragraph describing your map critique sessions as well as any other collaborations or help: A paragraph that describes any help you received or offered others, including how you responded to your critique session.
 - received no help
-
-
-
