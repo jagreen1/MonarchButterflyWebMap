@@ -1,19 +1,18 @@
-# Monarch Butterfly WebMap
+# Monarch Butterfly WebMap:
 [Monarch Butterfly Adult Sighting Map of the 2018 Fall Southern Migration](https://jagreen1.github.io/MonarchButterflyWebMap/JAG_Geob472_Lab1_Final.html) <br>
-
 
 This webmap displays location data for reported first sightings of adult Monarch Butterflies in 2018. The slider in the upper left can be used to filter data between August 1, 2018 and December 31, 2018. Data points can be clicked on to reveal metadata about the sighting events.
 
-## Webmap Screenshot
+## Webmap Screenshot:
 ![Example Map Screenshot](https://jagreen1.github.io/MonarchButterflyWebMap/Example_WebMap_Screenshot.PNG)
 
-## Mapbox Studio JSON style file
+## Mapbox Studio Style:
 [Custom Map Style](https://jagreen1.github.io/MonarchButterflyWebMap/Minimalist-Environmental_Style.json) <br>
-This map features a custom map style developed in Mapbox Studio.
+This map features a custom map style that was developed in Mapbox Studio and downloaded as a json file.
 
-## Data
-[Data Source](https://journeynorth.org/sightings/querylist.html?season=fall&map=monarch-adult-fall&year=2018&submit=View+Data) <br>
-[Monarch Sighting Geojson Data](https://jagreen1.github.io/MonarchButterflyWebMap/2018MonarchSightings.geojson) <br>
+## Data: 
+Data Source - [Journey North Migration Data](https://journeynorth.org/sightings/querylist.html?season=fall&map=monarch-adult-fall&year=2018&submit=View+Data)<br>
+Monarch Sighting Geojson Data - [Geojson Feature Collection](https://jagreen1.github.io/MonarchButterflyWebMap/2018MonarchSightings.geojson)<br>
 
 Data for 2018 adult monarch butterfly sightings was obtained from the [Journey North' citizen science website](https://journeynorth.org/sightings/querylist.html?season=fall&map=monarch-adult-fall&year=2018&submit=View+Data). Data from public reported sightings between August 1, 2018 and December 31, 2018 were entered into a csv file. The data was then converted into a [geojson feature collection](https://jagreen1.github.io/MonarchButterflyWebMap/2018MonarchSightings.geojson) following the WGS84 GCS, using the Open Data Institute's 'CSV to GeoJSON' webtool. 
 
@@ -30,4 +29,5 @@ Taking this map forward, I would implement additional technical features such as
 
 
 Paragraph describing your map critique sessions as well as any other collaborations or help: A paragraph that describes any help you received or offered others, including how you responded to your critique session.
-- received no help
+## Critique Session: 
+I have strong programing experience and did not require any personal help when designing the map. Instead I used official Mapbox tutorial code as a reference and applied my own programing knowledge to create the desired interactive features.
