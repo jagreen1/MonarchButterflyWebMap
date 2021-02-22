@@ -4,12 +4,12 @@ Monarch Butterfly Adult Sighting Map for the Fall 2018 Southern Migration <br>
 
 This webmap displays location data for reported first sightings of adult Monarch Butterflies in 2018. The slider in the upper left can be used to filter data between August 1, 2018 and December 31, 2018. Data points can be clicked on to reveal metadata about the sighting events.
 
-## Mapbox Studio JSON style file
-[Custom Map Style](https://jagreen1.github.io/MonarchButterflyWebMap/Minimalist-Environmental_Style.json)
-
 ## Webmap Screenshot
 ![Example Map Screenshot](https://jagreen1.github.io/MonarchButterflyWebMap/Example_WebMap_Screenshot.PNG)
 
+## Mapbox Studio JSON style file
+[Custom Map Style](https://jagreen1.github.io/MonarchButterflyWebMap/Minimalist-Environmental_Style.json) <br>
+This map features a custom map style developed in Mapbox Studio.
 
 ## Data
 [Data Source](https://journeynorth.org/sightings/querylist.html?season=fall&map=monarch-adult-fall&year=2018&submit=View+Data) <br>
