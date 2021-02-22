@@ -15,7 +15,7 @@ This map features a custom map style developed in Mapbox Studio.
 [Data Source](https://journeynorth.org/sightings/querylist.html?season=fall&map=monarch-adult-fall&year=2018&submit=View+Data) <br>
 [Monarch Sighting Geojson Data](https://jagreen1.github.io/MonarchButterflyWebMap/2018MonarchSightings.geojson) <br>
 
-First adult monarch butterfly sighting data from 2018 was obtained from the [Journey North' citizen science website](https://journeynorth.org/sightings/querylist.html?season=fall&map=monarch-adult-fall&year=2018&submit=View+Data). Data from public reported sightings between August 1, 2018 and December 31, 2018 were entered into a csv file. The data was then converted into a [geojson feature collection](https://jagreen1.github.io/MonarchButterflyWebMap/2018MonarchSightings.geojson) following the WGS84 GCS, using the Open Data Institute's 'CSV to GeoJSON' webtool. 
+Data for 2018 adult monarch butterfly sightings was obtained from the [Journey North' citizen science website](https://journeynorth.org/sightings/querylist.html?season=fall&map=monarch-adult-fall&year=2018&submit=View+Data). Data from public reported sightings between August 1, 2018 and December 31, 2018 were entered into a csv file. The data was then converted into a [geojson feature collection](https://jagreen1.github.io/MonarchButterflyWebMap/2018MonarchSightings.geojson) following the WGS84 GCS, using the Open Data Institute's 'CSV to GeoJSON' webtool. 
 
 [Monarch Butterfly Image](https://www.hiclipart.com/free-transparent-background-png-clipart-qdsai) <br>
 The copyright-free monarch butterfly image used to represent the data points was obtained from (https://www.hiclipart.com). <br>
