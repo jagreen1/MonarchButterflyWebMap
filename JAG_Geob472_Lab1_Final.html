@@ -1,0 +1,312 @@
+
+	
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8" />
+    <title>2018 First Adult Monarch Butterfly Sightings</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+    </head>
+    <body>
+    <style>
+    .map-overlay {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 25%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    }
+     
+    .map-overlay .map-overlay-inner {
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    }
+     
+    .map-overlay h2 {
+    line-height: 24px;
+    display: block;
+    margin: 0 0 10px;
+    }
+     
+
+    .mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+    </style>
+     
+    <div id="map"></div>
+     
+    <div class="map-overlay top">
+    <div class="map-overlay-inner">
+    <h2>2018 First Adult Monarch Butterfly Sightings </h2>
+    <label id="sdv_label"></label>
+    <input id="slider" type="range" min="43313" max="43465" step="1" value="43313" />
+    </div>
+    </div>
+    </div>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+
+
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamdyZWVuMSIsImEiOiJja2xhMHEwbDMydHFqMzB0N3FxdTAyYjl6In0.Hv__9wnsQJpvHjh-zLgZMw';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/jgreen1/cklfge1x623f317rxssxd64t3',
+        center: [-100, 40],
+        zoom: 3.5
+    });
+
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl())
+
+
+    //Set dictionary key-pair values between the serial date values and the date in mm/dd/yyyy format.
+    var SDV_dict = new Map();
+    SDV_dict.set("43313", "08/01/2018");
+    SDV_dict.set("43314", "08/01/2019");
+    SDV_dict.set("43315", "08/01/2020");
+    SDV_dict.set("43316", "08/01/2021");
+    SDV_dict.set("43317", "08/01/2022");
+    SDV_dict.set("43318", "08/01/2023");
+    SDV_dict.set("43319", "08/01/2024");
+    SDV_dict.set("43320", "08/01/2025");
+    SDV_dict.set("43321", "08/01/2026");
+    SDV_dict.set("43322", "08/10/2018");
+    SDV_dict.set("43323", "08/11/2018");
+    SDV_dict.set("43324", "08/12/2018");
+    SDV_dict.set("43325", "08/13/2018");
+    SDV_dict.set("43326", "08/14/2018");
+    SDV_dict.set("43327", "08/15/2018");
+    SDV_dict.set("43328", "08/16/2018");
+    SDV_dict.set("43329", "08/17/2018");
+    SDV_dict.set("43330", "08/18/2018");
+    SDV_dict.set("43331", "08/19/2018");
+    SDV_dict.set("43332", "08/20/2018");
+    SDV_dict.set("43333", "08/21/2018");
+    SDV_dict.set("43334", "08/22/2018");
+    SDV_dict.set("43335", "08/23/2018");
+    SDV_dict.set("43336", "08/24/2018");
+    SDV_dict.set("43337", "08/25/2018");
+    SDV_dict.set("43338", "08/26/2018");
+    SDV_dict.set("43339", "08/27/2018");
+    SDV_dict.set("43340", "08/28/2018");
+    SDV_dict.set("43341", "08/29/2018");
+    SDV_dict.set("43342", "08/30/2018");
+    SDV_dict.set("43343", "08/31/2018");
+    SDV_dict.set("43344", "09/01/2018");
+    SDV_dict.set("43345", "09/02/2018");
+    SDV_dict.set("43346", "09/03/2018");
+    SDV_dict.set("43347", "09/04/2018");
+    SDV_dict.set("43348", "09/05/2018");
+    SDV_dict.set("43349", "09/06/2018");
+    SDV_dict.set("43350", "09/07/2018");
+    SDV_dict.set("43351", "09/08/2018");
+    SDV_dict.set("43352", "09/09/2018");
+    SDV_dict.set("43353", "09/10/2018");
+    SDV_dict.set("43354", "09/11/2018");
+    SDV_dict.set("43355", "09/12/2018");
+    SDV_dict.set("43356", "09/13/2018");
+    SDV_dict.set("43357", "09/14/2018");
+    SDV_dict.set("43358", "09/15/2018");
+    SDV_dict.set("43359", "09/16/2018");
+    SDV_dict.set("43360", "09/17/2018");
+    SDV_dict.set("43361", "09/18/2018");
+    SDV_dict.set("43362", "09/19/2018");
+    SDV_dict.set("43363", "09/20/2018");
+    SDV_dict.set("43364", "09/21/2018");
+    SDV_dict.set("43365", "09/22/2018");
+    SDV_dict.set("43366", "09/23/2018");
+    SDV_dict.set("43367", "09/24/2018");
+    SDV_dict.set("43368", "09/25/2018");
+    SDV_dict.set("43369", "09/26/2018");
+    SDV_dict.set("43370", "09/27/2018");
+    SDV_dict.set("43371", "09/28/2018");
+    SDV_dict.set("43372", "09/29/2018");
+    SDV_dict.set("43373", "09/30/2018");
+    SDV_dict.set("43374", "10/01/2018");
+    SDV_dict.set("43375", "10/02/2018");
+    SDV_dict.set("43376", "10/03/2018");
+    SDV_dict.set("43377", "10/04/2018");
+    SDV_dict.set("43378", "10/05/2018");
+    SDV_dict.set("43379", "10/06/2018");
+    SDV_dict.set("43380", "10/07/2018");
+    SDV_dict.set("43381", "10/08/2018");
+    SDV_dict.set("43382", "10/09/2018");
+    SDV_dict.set("43383", "10/10/2018");
+    SDV_dict.set("43384", "10/11/2018");
+    SDV_dict.set("43385", "10/12/2018");
+    SDV_dict.set("43386", "10/13/2018");
+    SDV_dict.set("43387", "10/14/2018");
+    SDV_dict.set("43388", "10/15/2018");
+    SDV_dict.set("43389", "10/16/2018");
+    SDV_dict.set("43390", "10/17/2018");
+    SDV_dict.set("43391", "10/18/2018");
+    SDV_dict.set("43392", "10/19/2018");
+    SDV_dict.set("43393", "10/20/2018");
+    SDV_dict.set("43394", "10/21/2018");
+    SDV_dict.set("43395", "10/22/2018");
+    SDV_dict.set("43396", "10/23/2018");
+    SDV_dict.set("43397", "10/24/2018");
+    SDV_dict.set("43398", "10/25/2018");
+    SDV_dict.set("43399", "10/26/2018");
+    SDV_dict.set("43400", "10/27/2018");
+    SDV_dict.set("43401", "10/28/2018");
+    SDV_dict.set("43402", "10/29/2018");
+    SDV_dict.set("43403", "10/30/2018");
+    SDV_dict.set("43404", "10/31/2018");
+    SDV_dict.set("43405", "11/01/2018");
+    SDV_dict.set("43406", "11/02/2018");
+    SDV_dict.set("43407", "11/03/2018");
+    SDV_dict.set("43408", "11/04/2018");
+    SDV_dict.set("43409", "11/05/2018");
+    SDV_dict.set("43410", "11/06/2018");
+    SDV_dict.set("43411", "11/07/2018");
+    SDV_dict.set("43412", "11/08/2018");
+    SDV_dict.set("43413", "11/09/2018");
+    SDV_dict.set("43414", "11/10/2018");
+    SDV_dict.set("43415", "11/11/2018");
+    SDV_dict.set("43416", "11/12/2018");
+    SDV_dict.set("43417", "11/13/2018");
+    SDV_dict.set("43418", "11/14/2018");
+    SDV_dict.set("43419", "11/15/2018");
+    SDV_dict.set("43420", "11/16/2018");
+    SDV_dict.set("43421", "11/17/2018");
+    SDV_dict.set("43422", "11/18/2018");
+    SDV_dict.set("43423", "11/19/2018");
+    SDV_dict.set("43424", "11/20/2018");
+    SDV_dict.set("43425", "11/21/2018");
+    SDV_dict.set("43426", "11/22/2018");
+    SDV_dict.set("43427", "11/23/2018");
+    SDV_dict.set("43428", "11/24/2018");
+    SDV_dict.set("43429", "11/25/2018");
+    SDV_dict.set("43430", "11/26/2018");
+    SDV_dict.set("43431", "11/27/2018");
+    SDV_dict.set("43432", "11/28/2018");
+    SDV_dict.set("43433", "11/29/2018");
+    SDV_dict.set("43434", "11/30/2018");
+    SDV_dict.set("43435", "12/01/2018");
+    SDV_dict.set("43436", "12/02/2018");
+    SDV_dict.set("43437", "12/03/2018");
+    SDV_dict.set("43438", "12/04/2018");
+    SDV_dict.set("43439", "12/05/2018");
+    SDV_dict.set("43440", "12/06/2018");
+    SDV_dict.set("43441", "12/07/2018");
+    SDV_dict.set("43442", "12/08/2018");
+    SDV_dict.set("43443", "12/09/2018");
+    SDV_dict.set("43444", "12/10/2018");
+    SDV_dict.set("43445", "12/11/2018");
+    SDV_dict.set("43446", "12/12/2018");
+    SDV_dict.set("43447", "12/13/2018");
+    SDV_dict.set("43448", "12/14/2018");
+    SDV_dict.set("43449", "12/15/2018");
+    SDV_dict.set("43450", "12/16/2018");
+    SDV_dict.set("43451", "12/17/2018");
+    SDV_dict.set("43452", "12/18/2018");
+    SDV_dict.set("43453", "12/19/2018");
+    SDV_dict.set("43454", "12/20/2018");
+    SDV_dict.set("43455", "12/21/2018");
+    SDV_dict.set("43456", "12/22/2018");
+    SDV_dict.set("43457", "12/23/2018");
+    SDV_dict.set("43458", "12/24/2018");
+    SDV_dict.set("43459", "12/25/2018");
+    SDV_dict.set("43460", "12/26/2018");
+    SDV_dict.set("43461", "12/27/2018");
+    SDV_dict.set("43462", "12/28/2018");
+    SDV_dict.set("43463", "12/29/2018");
+    SDV_dict.set("43464", "12/30/2018");
+    SDV_dict.set("43465", "12/31/2018");
+
+    //Create a filter function that determines what subset of the datapoints will be visible on the map.
+    function filterBy(Serial_Date_Value) {
+        var filters = ['==', 'Serial_Date_Value', Serial_Date_Value];
+        map.setFilter('butterfly-points', filters);
+
+        // Set the slider's label to the correct date by calling the serial data values from the dictionary
+        document.getElementById('sdv_label').textContent = SDV_dict.get(Serial_Date_Value);
+        
+    }
+
+    map.on('load', function () {
+        //Load in the monarch butterfly png that will be used to represent an individual data point
+        map.loadImage(
+        'https://jagreen1.github.io/MonarchButterflyWebMap/monarch_butterfly_icon.png',
+        function (error, image) {
+            if (error) throw error;
+                map.addImage('butterfly_png', image);
+                map.addSource('butterflies', {
+                    type: 'geojson',
+                    data: 'https://jagreen1.github.io/MonarchButterflyWebMap/2018MonarchSightings.geojson'
+                });
+            //Define the parameters of the monarch butterfly data points and add them to the map
+            map.addLayer({
+                'id': 'butterfly-points',
+                'type': 'symbol',
+                'source': 'butterflies',
+                'layout': {
+                    'icon-image': 'butterfly_png',
+                    'icon-size': 0.03,
+                    'icon-allow-overlap': true}
+            });
+
+            
+            //When clicked the butterfly points will create new features with metadata that will be displayed to the user via a popup box.
+            map.on('click', 'butterfly-points', function (e) {
+            var coordinates = e.features[0].geometry.coordinates.slice();
+            var Sighting_Location = e.features[0].properties.Town; 
+            var Sighting_State_Province = e.features[0].properties.State_Province; 
+            var Sighting_Date = e.features[0].properties.Sighting_DMY;
+            
+            // Ensure that if the map is zoomed out such that multiple
+            // copies of the feature are visible, the popup appears
+            // over the copy being pointed to.
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+            
+            //Set the html output and coordinate location of popup boxes containing metadata about the data points.
+            new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML('Date: ' + Sighting_Date + '<br>' + 'Town: ' + Sighting_Location + '<br>' + 'State/Province: ' + Sighting_State_Province)
+            .addTo(map);
+            });
+            
+            // Change the cursor to a pointer when the mouse is over the places layer.
+            map.on('mouseenter', 'butterfly-circles', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            
+            // Change it back to a pointer when it leaves.
+            map.on('mouseleave', 'butterfly-circles', function () {
+                map.getCanvas().style.cursor = '';
+            });
+
+            //Set the initial filter value as the first date of recording sighting
+            filterBy(43313);
+
+            //When the slider is moved the butterfly data points will be filtered according to the slider input value fed into the filter function.
+            document.getElementById('slider').addEventListener('input', function (e) {
+                var Serial_Date_Value = (e.target.value);
+                filterBy(Serial_Date_Value);
+            });
+        }
+    );
+
+    }
+    )
+
+
+</script>
+ 
+</body>
+</html>
