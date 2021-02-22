@@ -8,7 +8,7 @@ Put the following files into it:
 [Custom Map Style](https://jagreen1.github.io/MonarchButterflyWebMap/Minimalist-Environmental_Style.json)
 
 2) A screenshot (Links to an external site.) excerpt of a part of your map you find attractive and/or compelling.
-[Example Map Screenshot](https://jagreen1.github.io/MonarchButterflyWebMap/Example_WebMap_Screenshot.PNG)
+![Example Map Screenshot](https://jagreen1.github.io/MonarchButterflyWebMap/Example_WebMap_Screenshot.PNG)
 
 README.md that contains:
 Your screenshot: This should be seen as an image, not just as a link. Markdown lets you do that. (Links to an external site.)
