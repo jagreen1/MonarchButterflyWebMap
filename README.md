@@ -1,5 +1,5 @@
 # MonarchButterflyWebMap
-Monarch Butterfly Adult Sighting Map for the Fall 2018 Southern Migration <b>
+Monarch Butterfly Adult Sighting Map for the Fall 2018 Southern Migration <br>
 [Map Link](https://jagreen1.github.io/MonarchButterflyWebMap/JAG_Geob472_Lab1_v4.html)
 
 This webmap displays location data for reported first sightings of adult Monarch Butterflies in 2018. The slider in the upper left can be used to filter data between August 1, 2018 and December 31, 2018. Data points can be clicked on to reveal metadata about the sighting events.
@@ -12,13 +12,13 @@ This webmap displays location data for reported first sightings of adult Monarch
 
 
 ## Data
-[Data Source](https://journeynorth.org/sightings/querylist.html?season=fall&map=monarch-adult-fall&year=2018&submit=View+Data) <b>
-[Monarch Sighting Geojson Data](https://jagreen1.github.io/MonarchButterflyWebMap/2018MonarchSightings.geojson) <b>
+[Data Source](https://journeynorth.org/sightings/querylist.html?season=fall&map=monarch-adult-fall&year=2018&submit=View+Data) <br>
+[Monarch Sighting Geojson Data](https://jagreen1.github.io/MonarchButterflyWebMap/2018MonarchSightings.geojson) <br>
 
 First adult monarch butterfly sighting data from 2018 was obtained from the 'Journey North' citizen science website. Data from public reported sightings between August 1, 2018 and December 31, 2018 were entered into a csv file. The data was then converted into a geojson feature collection following the WGS84 GCS, using the Open Data Institute's 'CSV to GeoJSON' webtool. 
 
-[Monarch Butterfly Image](https://www.hiclipart.com/free-transparent-background-png-clipart-qdsai) <b>
-The copyright-free monarch butterfly image used to represent the data points was obtained from (https://www.hiclipart.com/). <b>
+[Monarch Butterfly Image](https://www.hiclipart.com/free-transparent-background-png-clipart-qdsai) <br>
+The copyright-free monarch butterfly image used to represent the data points was obtained from (https://www.hiclipart.com/). <br>
 
 
 ## Reflective analysis:
